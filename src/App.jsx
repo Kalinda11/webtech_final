@@ -10,12 +10,14 @@ function App() {
     <Router>
       <Toaster />
       <div className="min-h-screen bg-gray-100">
-        <Routes>
-          <Route path="/users" element={<Users />} />
-          {/* Add more routes as needed */}
-          <Route path="/landing" element={<Landing/>} />
-          <Route path="/Login" element={<Login/>} />
-        </Routes>
+      <Routes>
+  <Route path="/" element={<Landing />} /> {/* Default landing page */}
+  <Route path="/users" element={<Users />} />
+  <Route path="/landing" element={<Landing />} />
+  <Route path="/login" element={<Login />} />
+  {/* Add more routes as needed */}
+</Routes>
+
       </div>
     </Router>
   );
